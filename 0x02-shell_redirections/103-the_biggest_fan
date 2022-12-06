@@ -1,2 +1,2 @@
 #!/bin/bash
-cat nasa_19950801.tsv | cut -f1 | sort -nr | uniq -c | sort -r | head -11 | grep -oP '^ *[0-9]+ \K.*'
+cut -f1 | sort -nr | uniq -c | sort -r | head -11 | grep -oP '^ *[0-9]+ \K.*'
