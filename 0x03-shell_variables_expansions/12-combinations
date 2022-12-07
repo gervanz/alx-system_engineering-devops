@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "\n"{a..e}{a..e} | grep -v cc
+echo {a..e}{a..e} | tr ' ' '\n' | grep -v cc
